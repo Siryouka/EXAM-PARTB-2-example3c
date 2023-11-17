@@ -114,11 +114,11 @@ plt.title('Example 3c Function Approximation')
 plt.axis([0, 100, -10, 10])
 plt.show()
 
-# Performance Metrics
-g = np.var(np.array(yp[1:]) - np.array(yphat[1:]))
-h = np.var(np.array(yp[1:]))
-perf = (1 - (g / h)) * 100
-print(f"Performance: {perf}%")
+# # Performance Metrics
+# g = np.var(np.array(yp[1:]) - np.array(yphat[1:]))
+# h = np.var(np.array(yp[1:]))
+# perf = (1 - (g / h)) * 100
+# print(f"Performance: {perf}%")
 
-mse = np.sum((np.array(yp[1:]) - np.array(yphat[1:])) ** 2) / len(yp[1:])
-print(f"MSE: {mse}")
+# mse = np.sum((np.array(yp[1:]) - np.array(yphat[1:])) ** 2) / len(yp[1:])
+# print(f"MSE: {mse}")
